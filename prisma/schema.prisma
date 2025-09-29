@@ -5,7 +5,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://votev8-8g6i:shadow-d3ctf383flogop761dc0@127.0.0.1:9500/votev8?sslmode=disable"
+  url      = env("DATABASE_URL")
 }
 
 model User {
